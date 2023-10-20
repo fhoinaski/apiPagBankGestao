@@ -14,5 +14,5 @@ const redis = new IORedis({
 setInterval(() => {
   redis.ping(); 
 }, 20000); 
-
+// 
 module.exports = redis;
