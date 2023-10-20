@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const { connect } = require("./database/connect");
+// const { connect } = require("./database/connect");
 const router = require("./routes");
 const swaggerUi = require("swagger-ui-express");
 const { swaggerSpec, uiConfig } = require("./swaggerConfig");
@@ -13,7 +13,7 @@ const port = configService.getPort();
 class Server {
   constructor(server = express()) {
     this.middlewares(server);
-    this.database();
+    // this.database();
     this.todasRotas(server);
     this.start(server);
   }
@@ -24,15 +24,15 @@ class Server {
     app.use(express.json());
   }
 
-  async database() {
-    try {
-      // await connect.authenticate();
-      console.log("Conexão estabelecida com sucesso.");
-    } catch (error) {
-      console.error("Não foi possível conectar ao banco de dados:", error);
-      throw error;
-    }
-  }
+  // async database() {
+  //   try {
+  //     await connect.authenticate();
+  //     console.log("Conexão estabelecida com sucesso.");
+  //   } catch (error) {
+  //     console.error("Não foi possível conectar ao banco de dados:", error);
+  //     throw error;
+  //   }
+  // }
 
   async start(app) {
     app.listen(port, () => {
