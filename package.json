@@ -26,6 +26,7 @@
     "pino-http": "^8.5.0",
     "pino-pretty": "^10.2.0",
     "redis": "^4.6.7",
+    "sequelize": "^6.33.0",
     "swagger-auth": "^1.0.2",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.0"
