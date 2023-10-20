@@ -1,0 +1,17 @@
+
+2023-09-21T03:25:23.619Z  info: Dados do consulta:{"birth_date":"31/05/1985","document":"04869564904","mother_name":"ALBERTINA ROSING HOINASKI","name":"FERNANDO HOINASKI","__typename":"Seller"}
+2023-09-21T03:25:47.608Z  info: Dados do consulta:{"cnpj":"33362178000131","companyName":"33.362.178 FERNANDO HOINASKI","tradeName":"FHSK VENDAS"}
+2023-09-21T17:51:53.793Z  error: Erro ao consultar documento: query is not defined
+2023-09-21T17:53:17.003Z  error: Erro ao consultar documento: query is not defined
+2023-09-21T20:38:53.388Z  error: Erro ao consultar documento: Erro ao buscar dados do CNPJ: axios is not defined
+2023-09-21T20:39:22.632Z  error: Erro ao consultar documento: Erro ao buscar dados do CNPJ: axios is not defined
+2023-09-21T20:39:38.024Z  error: Erro ao consultar documento: Erro ao buscar dados do CNPJ: axios is not defined
+2023-09-21T20:40:45.392Z  error: Erro ao consultar documento: Erro ao buscar dados do CNPJ: axios is not defined
+2023-09-21T20:41:06.010Z  error: Erro ao consultar documento: Erro ao buscar dados do CNPJ: axios is not defined
+2023-09-21T20:41:10.493Z  error: Erro ao consultar documento: Erro ao buscar dados do CNPJ: axios is not defined
+2023-09-21T20:41:53.734Z  error: Erro ao consultar documento: Erro ao buscar dados do CNPJ: axios is not defined
+2023-09-21T20:41:58.367Z  error: Erro ao consultar documento: Erro ao buscar dados do CNPJ: axios is not defined
+2023-09-21T20:42:05.018Z  error: Erro ao consultar documento: Erro ao buscar dados do CNPJ: axios is not defined
+2023-09-21T20:42:27.031Z  error: Erro ao consultar documento: Erro ao buscar dados do CNPJ: axios is not defined
+2023-09-21T20:43:08.145Z  error: Erro ao consultar documento: Erro ao buscar dados do CNPJ: axios is not defined
+2023-09-21T20:43:11.502Z  error: Erro ao consultar documento: Erro ao buscar dados do CNPJ: axios is not defined
