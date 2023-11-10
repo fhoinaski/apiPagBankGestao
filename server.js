@@ -22,7 +22,7 @@ class Server {
     app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec, uiConfig));
     app.use(cors(
       {
-        origin: ["https://buscarcodigopagbank.vercel.app","http://localhots:3333"],
+        origin: ["https://buscarcodigopagbank.vercel.app","http://localhots:3333","http://localhots:3333"],
         methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
         preflightContinue: false,
         optionsSuccessStatus: 204,
