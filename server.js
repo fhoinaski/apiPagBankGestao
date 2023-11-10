@@ -20,14 +20,15 @@ class Server {
 
   async middlewares(app) {
     app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec, uiConfig));
-    app.use(cors(
-      {
-        origin: ["https://buscarcodigopagbank.vercel.app","http://localhots:3333","http://localhots:3000"],
-        methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-        preflightContinue: false,
-        optionsSuccessStatus: 204,
-      }
-    ));
+    app.use(cors());
+    // app.use(cors(
+    //   {
+    //     origin: ["https://buscarcodigopagbank.vercel.app","http://localhots:3333","http://localhots:3000"],
+    //     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    //     preflightContinue: false,
+    //     optionsSuccessStatus: 204,
+    //   }
+    // ));
     app.use(express.json());
   }
 
