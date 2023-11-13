@@ -234,7 +234,6 @@ const obterCodigoAtivacao = async (req, res) => {
 
 const listarMaquinas = async (req, res) => {
   const { idOrder } = req.body;
-  console.log(idOrder);
   const result = await pagSeguroGets.listarMaquinas(parseInt(idOrder));
   try {
     res.status(HTTP_STATUS.OK).json(result);

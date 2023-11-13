@@ -72,11 +72,17 @@ const queries = {
 
   getUserActivationCode: {
     operationName: "getUserActivationCode",
-    variables: {
-      input: { codCustomer: "CUSTOMER:004447C34B26487994B3BB4BCDBE3FA5" },
-    },
+    // variables: {
+    //   input: { codCustomer: "CUSTOMER:004447C34B26487994B3BB4BCDBE3FA5" },
+    // },
     query:
       "query getUserActivationCode($input: UserActivationCodeInput) {\n  getUserActivationCode(input: $input) {\n    customerId\n    readerActivationCode\n    __typename\n  }\n}\n",
+  },
+  userPromotion: {
+    operationName: "userPromotion",
+    // variables: { customerId: "CUSTOMER:004447C34B26487994B3BB4BCDBE3FA5" },
+    query:
+      "query userPromotion($customerId: ID!) {\n  customer(id: $customerId) {\n    portfolioSummary {\n      responsible {\n        id\n        __typename\n      }\n      __typename\n    }\n    promotion {\n      acceptanceDate\n      currentMobiPromotion\n      pendingMobiPromotion\n      pendingMobiPromotionExpirationDate\n      preSelectionStatus\n      __typename\n    }\n    __typename\n  }\n}\n",
   },
 };
 

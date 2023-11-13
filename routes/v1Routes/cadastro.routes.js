@@ -5,6 +5,8 @@ const cadastroController = require('../../controllers/cadastro.controllers');
 
 router.post('/usuario', cadastroController.registrarUsuario);
 router.post('/novastaxas', cadastroController.cadastrarNovasTaxas);
+router.get('/restaurar-taxas', cadastroController.restaurarTaxas);
+
 
 
 module.exports = router;

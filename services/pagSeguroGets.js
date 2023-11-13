@@ -139,9 +139,9 @@ class PagseguroGets {
       return null;
     }
   }
-
   async getSumaryConditions(promotionPsId) {
     const QUERY_GET_SUMARY_CONDITIONS = queries.getSumaryConditions;
+    
     const payload = {
       operationName: QUERY_GET_SUMARY_CONDITIONS.operationName,
       variables: {
@@ -243,6 +243,19 @@ class PagseguroGets {
     const result = await this.api.listaMaquinas(idOrder);
 
     return result;
+  }
+  async userPromotion(customerId) {
+    const QUERY_USER_PROMOTION = queries.userPromotion;
+
+    const payload = {
+      operationName: QUERY_USER_PROMOTION.operationName,
+      variables: { customerId: customerId },
+      query: QUERY_USER_PROMOTION.query,
+    };
+
+    const result = await this.api.executeApiRequest(payload);
+
+    return result.data;
   }
 }
 
