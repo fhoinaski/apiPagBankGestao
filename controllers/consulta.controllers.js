@@ -8,6 +8,7 @@ const DocumentDataFetcher = require("../services/documentConsult/documentDataFet
 const PagseguroGets = require("../services/pagSeguroGets");
 const { fetchDataCep } = require("./utils/fetchDataCep");
 const dataValidate = require("./utils/dataValidate");
+const  processPromotions  = require("../services/buscarTaxas");
 
 const pagSeguroGets = new PagseguroGets();
 const fetch = new DocumentDataFetcher();
@@ -165,9 +166,12 @@ const obterDetalhesCliente = async (req, res) => {
 };
 const listarPromocoes = async (req, res) => {
   try {
-    const result = await pagSeguroGets.getPromotionList();
+    // const result = await pagSeguroGets.getPromotionList();
+    const result = await processPromotions();
+    console.log(result);
     res.status(HTTP_STATUS.OK).json(result);
   } catch (error) {
+    console.log(error);
     res
       .status(HTTP_STATUS.INTERNAL_SERVER_ERROR)
       .json({ error: "Erro ao consultar id." });

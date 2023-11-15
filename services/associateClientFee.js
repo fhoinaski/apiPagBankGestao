@@ -10,11 +10,14 @@ async function associateClientFee(dataAssociate) {
   const fecthPagsegurId = await pagseguroGets.getClientByEmail(
     dataAssociate.email
   );
-  if(fecthPagsegurId.result === "NOK") return fecthPagsegurId.message;
+  console.log(fecthPagsegurId);
+  if(fecthPagsegurId.result === "NOK") return fecthPagsegurId;
 
   const pagseguroId = fecthPagsegurId.message.pagseguroId;
   const fectchDataTaxa = await pagseguroGets.userPromotion(fecthPagsegurId.message.customerId);
+  console.log(fectchDataTaxa);
   const taxaAntiga = fectchDataTaxa.customer.promotion.currentMobiPromotion;
+  console.log(taxaAntiga);
 
   const payload = {
     operationName: QUERY_ASSOCIATE_MOBI_PROMOTION.operationName,
