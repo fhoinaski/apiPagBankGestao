@@ -18,7 +18,7 @@ async function registerUserNewTax(dataUser){
         email: dataUser.email
       },
       data: {
-        taxaAntiga: dataUser.taxaAntiga,
+        taxaAntiga: dataUser.taxaAntiga || '',
         taxaNova: dataUser.taxaNova,
         restauradoTaxas: false
       }
