@@ -29,9 +29,10 @@ async function restoreClientRate(email) {
   let code;
   if(client.primeiraTaxa === "DEFAULT"){
     code = 724227
-
+  }else{
+    code = await getCodeByName(client.primeiraTaxa);
   }
-  code = await getCodeByName(client.primeiraTaxa);
+  
 
   const payload = {
     selelerId: client.pagSeguroId,
