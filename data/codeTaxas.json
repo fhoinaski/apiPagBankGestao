@@ -1107,6 +1107,34 @@
       "__typename": "MobiPromotion"
     },
     {
+      "id": "7775",
+      "name": "blackfridaybasico",
+      "active": null,
+      "code": 724985,
+      "__typename": "MobiPromotion"
+    },
+    {
+      "id": "7773",
+      "name": "blackfridaysupermaxplus",
+      "active": null,
+      "code": 724983,
+      "__typename": "MobiPromotion"
+    },
+    {
+      "id": "7772",
+      "name": "blackfridaysupermaxpro",
+      "active": null,
+      "code": 724982,
+      "__typename": "MobiPromotion"
+    },
+    {
+      "id": "7774",
+      "name": "blackfridaysupermaxsmart",
+      "active": null,
+      "code": 724984,
+      "__typename": "MobiPromotion"
+    },
+    {
       "id": "4082",
       "name": "blu5661cp",
       "active": null,
@@ -6630,6 +6658,20 @@
       "__typename": "MobiPromotion"
     },
     {
+      "id": "7777",
+      "name": "nnpaybras7299debcredd0",
+      "active": null,
+      "code": 724986,
+      "__typename": "MobiPromotion"
+    },
+    {
+      "id": "7776",
+      "name": "nnpaybras7299debitod0",
+      "active": null,
+      "code": 724987,
+      "__typename": "MobiPromotion"
+    },
+    {
       "id": "7727",
       "name": "nnpaybras7299faixa1d0",
       "active": null,
@@ -6648,6 +6690,13 @@
       "name": "nnpaybras7299faixa1pp",
       "active": null,
       "code": 724731,
+      "__typename": "MobiPromotion"
+    },
+    {
+      "id": "7778",
+      "name": "nnpaybras7299parced0",
+      "active": null,
+      "code": 724988,
       "__typename": "MobiPromotion"
     },
     {
@@ -7750,13 +7799,6 @@
       "__typename": "MobiPromotion"
     },
     {
-      "id": "3623",
-      "name": "parcerias2pdv365",
-      "active": null,
-      "code": 718357,
-      "__typename": "MobiPromotion"
-    },
-    {
       "id": "2822",
       "name": "parcerias9901",
       "active": null,
@@ -8583,13 +8625,6 @@
       "__typename": "MobiPromotion"
     },
     {
-      "id": "3622",
-      "name": "parceriaspdv365",
-      "active": null,
-      "code": 718364,
-      "__typename": "MobiPromotion"
-    },
-    {
       "id": "3624",
       "name": "parceriaspdv365basic1n",
       "active": null,
@@ -8601,20 +8636,6 @@
       "name": "parceriaspdv365basic2",
       "active": null,
       "code": 718354,
-      "__typename": "MobiPromotion"
-    },
-    {
-      "id": "4834",
-      "name": "parceriaspdv365circos",
-      "active": null,
-      "code": 721751,
-      "__typename": "MobiPromotion"
-    },
-    {
-      "id": "3763",
-      "name": "parceriaspdv365construcao",
-      "active": null,
-      "code": 718634,
       "__typename": "MobiPromotion"
     },
     {
@@ -13406,10 +13427,24 @@
       "__typename": "MobiPromotion"
     },
     {
+      "id": "7457",
+      "name": "siteoferta2vistapix0",
+      "active": null,
+      "code": 724788,
+      "__typename": "MobiPromotion"
+    },
+    {
       "id": "7517",
       "name": "siteoferta2vistapix00",
       "active": null,
       "code": 724801,
+      "__typename": "MobiPromotion"
+    },
+    {
+      "id": "7456",
+      "name": "siteoferta3multipix0",
+      "active": null,
+      "code": 724790,
       "__typename": "MobiPromotion"
     },
     {

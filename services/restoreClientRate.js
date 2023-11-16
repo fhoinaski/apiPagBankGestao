@@ -26,8 +26,12 @@ async function restoreClientRate(email) {
   if (!client) {
     return { error: "Cliente não encontrado para restaurar taxa verifique o email." };
   }
-  
-  const code = await getCodeByName(client.primeiraTaxa);
+  let code;
+  if(client.primeiraTaxa === "DEFAULT"){
+    code = 724227
+
+  }
+  code = await getCodeByName(client.primeiraTaxa);
 
   const payload = {
     selelerId: client.pagSeguroId,
