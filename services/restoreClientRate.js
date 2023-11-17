@@ -1,17 +1,23 @@
 const { PrismaClient } = require("@prisma/client");
 const fs = require("fs");
+const stringSimilarity = require('string-similarity');
 const PagSeguroApi = require("../api/PagSeguroAPI");
 const queries = require("../queries/queries");
-const PagseguroGets = require("../services/pagSeguroGets");
 const pagSeguroAPI = new PagSeguroApi();
-const pagseguroGets = new PagseguroGets();
+
 
 const prisma = new PrismaClient();
 
 async function getCodeByName(name) {
   const data = fs.readFileSync("./data/codeTaxas.json", "utf8");
   const json = JSON.parse(data);
-  const item = json.getMobilePromotionList.find((i) => i.name === name);
+  let item = json.getMobilePromotionList.find((i) => i.name === name);
+
+  if (!item) {
+    const names = json.getMobilePromotionList.map(i => i.name);
+    const bestMatch = stringSimilarity.findBestMatch(name, names);
+    item = json.getMobilePromotionList[bestMatch.bestMatchIndex];
+  }
 
   return item ? item.code : { error: "Nome não encontrado." };
 }
@@ -32,6 +38,7 @@ async function restoreClientRate(email) {
   }else{
     code = await getCodeByName(client.primeiraTaxa);
   }
+
   
 
   const payload = {
@@ -90,7 +97,6 @@ async function associateClientFee(dataAssociate) {
     const dataUser = {
       pagSeguroId: dataAssociate.selelerId,
       taxaNova: dataAssociate.promotionName,
-      taxaAntiga: dataAssociate.promotionName,
       restauradoTaxas: true,
     };
     await updateClientRate(dataUser);

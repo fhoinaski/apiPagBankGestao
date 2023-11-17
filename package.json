@@ -27,7 +27,8 @@
     "jsonwebtoken": "^9.0.2",
     "nodemon": "^3.0.1",
     "prisma": "^5.5.2",
-    "redis": "^4.6.7"
+    "redis": "^4.6.7",
+    "string-similarity": "^4.0.4"
   },
   "devDependencies": {
     "@types/jest": "^29.5.5",
